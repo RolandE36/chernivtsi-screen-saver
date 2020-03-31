@@ -1,6 +1,6 @@
 ﻿namespace Web_Page_Screensaver
 {
-    partial class PrefsByScreenUserControl
+    public partial class PrefsByScreenUserControl
     {
         /// <summary> 
         /// Required designer variable.
