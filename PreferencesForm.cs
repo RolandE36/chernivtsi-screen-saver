@@ -183,11 +183,6 @@ namespace Web_Page_Screensaver
             base.OnClosed(e);
         }
 
-        private void llProjectLocationUrl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start(llProjectLocationUrl.Text);
-        }
-
         private void okButton_Click(object sender, EventArgs e)
         {
             Close();

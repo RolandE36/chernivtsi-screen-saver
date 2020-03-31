@@ -31,14 +31,12 @@
         private void InitializeComponent()
         {
 			this.components = new System.ComponentModel.Container();
-			this.label1 = new System.Windows.Forms.Label();
-			this.llProjectLocationUrl = new System.Windows.Forms.LinkLabel();
 			this.okButton = new System.Windows.Forms.Button();
 			this.cancelButton = new System.Windows.Forms.Button();
 			this.cbCloseOnActivity = new System.Windows.Forms.CheckBox();
 			this.screenTabControl = new System.Windows.Forms.TabControl();
 			this.screenTabPage1 = new System.Windows.Forms.TabPage();
-			this.prefsByScreenUserControl1 = new PrefsByScreenUserControl();
+			this.prefsByScreenUserControl1 = new Web_Page_Screensaver.PrefsByScreenUserControl();
 			this.spanScreensButton = new System.Windows.Forms.RadioButton();
 			this.separateScreensButton = new System.Windows.Forms.RadioButton();
 			this.label4 = new System.Windows.Forms.Label();
@@ -51,31 +49,11 @@
 			this.multiScreenGroup.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(76, 9);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(121, 13);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Web Page Screensaver";
-			// 
-			// llProjectLocationUrl
-			// 
-			this.llProjectLocationUrl.AutoSize = true;
-			this.llProjectLocationUrl.Location = new System.Drawing.Point(22, 25);
-			this.llProjectLocationUrl.Name = "llProjectLocationUrl";
-			this.llProjectLocationUrl.Size = new System.Drawing.Size(233, 13);
-			this.llProjectLocationUrl.TabIndex = 1;
-			this.llProjectLocationUrl.TabStop = true;
-			this.llProjectLocationUrl.Text = "http://github.com/cwc/web-page-screensaver/";
-			this.llProjectLocationUrl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llProjectLocationUrl_LinkClicked);
-			// 
 			// okButton
 			// 
 			this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.okButton.Location = new System.Drawing.Point(224, 457);
+			this.okButton.Location = new System.Drawing.Point(203, 384);
 			this.okButton.Name = "okButton";
 			this.okButton.Size = new System.Drawing.Size(75, 23);
 			this.okButton.TabIndex = 4;
@@ -87,7 +65,7 @@
 			// 
 			this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.cancelButton.Location = new System.Drawing.Point(305, 457);
+			this.cancelButton.Location = new System.Drawing.Point(284, 384);
 			this.cancelButton.Name = "cancelButton";
 			this.cancelButton.Size = new System.Drawing.Size(75, 23);
 			this.cancelButton.TabIndex = 5;
@@ -101,7 +79,7 @@
 			this.cbCloseOnActivity.AutoSize = true;
 			this.cbCloseOnActivity.Checked = true;
 			this.cbCloseOnActivity.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.cbCloseOnActivity.Location = new System.Drawing.Point(15, 433);
+			this.cbCloseOnActivity.Location = new System.Drawing.Point(15, 365);
 			this.cbCloseOnActivity.Name = "cbCloseOnActivity";
 			this.cbCloseOnActivity.Size = new System.Drawing.Size(153, 17);
 			this.cbCloseOnActivity.TabIndex = 6;
@@ -114,35 +92,35 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.screenTabControl.Controls.Add(this.screenTabPage1);
-			this.screenTabControl.Location = new System.Drawing.Point(16, 94);
-			this.screenTabControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.screenTabControl.Location = new System.Drawing.Point(16, 54);
+			this.screenTabControl.Margin = new System.Windows.Forms.Padding(2);
 			this.screenTabControl.Name = "screenTabControl";
 			this.screenTabControl.SelectedIndex = 0;
-			this.screenTabControl.Size = new System.Drawing.Size(368, 319);
+			this.screenTabControl.Size = new System.Drawing.Size(347, 304);
 			this.screenTabControl.TabIndex = 13;
 			// 
 			// screenTabPage1
 			// 
 			this.screenTabPage1.Controls.Add(this.prefsByScreenUserControl1);
 			this.screenTabPage1.Location = new System.Drawing.Point(4, 22);
-			this.screenTabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.screenTabPage1.Margin = new System.Windows.Forms.Padding(2);
 			this.screenTabPage1.Name = "screenTabPage1";
-			this.screenTabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-			this.screenTabPage1.Size = new System.Drawing.Size(360, 293);
+			this.screenTabPage1.Padding = new System.Windows.Forms.Padding(2);
+			this.screenTabPage1.Size = new System.Drawing.Size(339, 278);
 			this.screenTabPage1.TabIndex = 0;
 			this.screenTabPage1.Text = "Screen 1";
 			this.screenTabPage1.UseVisualStyleBackColor = true;
 			// 
 			// prefsByScreenUserControl1
 			// 
-			this.prefsByScreenUserControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-			| System.Windows.Forms.AnchorStyles.Left)
-			| System.Windows.Forms.AnchorStyles.Right)));
+			this.prefsByScreenUserControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.prefsByScreenUserControl1.BackColor = System.Drawing.Color.White;
 			this.prefsByScreenUserControl1.Location = new System.Drawing.Point(6, 6);
 			this.prefsByScreenUserControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.prefsByScreenUserControl1.Name = "prefsByScreenUserControl1";
-			this.prefsByScreenUserControl1.Size = new System.Drawing.Size(350, 283);
+			this.prefsByScreenUserControl1.Size = new System.Drawing.Size(329, 268);
 			this.prefsByScreenUserControl1.TabIndex = 0;
 			// 
 			// spanScreensButton
@@ -150,7 +128,7 @@
 			this.spanScreensButton.AutoSize = true;
 			this.spanScreensButton.Checked = true;
 			this.spanScreensButton.Location = new System.Drawing.Point(75, 8);
-			this.spanScreensButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.spanScreensButton.Margin = new System.Windows.Forms.Padding(2);
 			this.spanScreensButton.Name = "spanScreensButton";
 			this.spanScreensButton.Size = new System.Drawing.Size(50, 17);
 			this.spanScreensButton.TabIndex = 14;
@@ -165,7 +143,7 @@
 			// 
 			this.separateScreensButton.AutoSize = true;
 			this.separateScreensButton.Location = new System.Drawing.Point(178, 8);
-			this.separateScreensButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.separateScreensButton.Margin = new System.Windows.Forms.Padding(2);
 			this.separateScreensButton.Name = "separateScreensButton";
 			this.separateScreensButton.Size = new System.Drawing.Size(68, 17);
 			this.separateScreensButton.TabIndex = 15;
@@ -188,7 +166,7 @@
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(12, 79);
+			this.label2.Location = new System.Drawing.Point(12, 39);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(76, 13);
 			this.label2.TabIndex = 2;
@@ -198,7 +176,7 @@
 			// 
 			this.mirrorScreensButton.AutoSize = true;
 			this.mirrorScreensButton.Location = new System.Drawing.Point(126, 8);
-			this.mirrorScreensButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.mirrorScreensButton.Margin = new System.Windows.Forms.Padding(2);
 			this.mirrorScreensButton.Name = "mirrorScreensButton";
 			this.mirrorScreensButton.Size = new System.Drawing.Size(51, 17);
 			this.mirrorScreensButton.TabIndex = 17;
@@ -215,10 +193,10 @@
 			this.multiScreenGroup.Controls.Add(this.mirrorScreensButton);
 			this.multiScreenGroup.Controls.Add(this.spanScreensButton);
 			this.multiScreenGroup.Controls.Add(this.separateScreensButton);
-			this.multiScreenGroup.Location = new System.Drawing.Point(15, 46);
-			this.multiScreenGroup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.multiScreenGroup.Location = new System.Drawing.Point(15, 6);
+			this.multiScreenGroup.Margin = new System.Windows.Forms.Padding(2);
 			this.multiScreenGroup.Name = "multiScreenGroup";
-			this.multiScreenGroup.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.multiScreenGroup.Padding = new System.Windows.Forms.Padding(2);
 			this.multiScreenGroup.Size = new System.Drawing.Size(248, 28);
 			this.multiScreenGroup.TabIndex = 18;
 			this.multiScreenGroup.TabStop = false;
@@ -229,15 +207,13 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.CancelButton = this.cancelButton;
-			this.ClientSize = new System.Drawing.Size(401, 487);
+			this.ClientSize = new System.Drawing.Size(380, 421);
 			this.Controls.Add(this.multiScreenGroup);
 			this.Controls.Add(this.screenTabControl);
 			this.Controls.Add(this.cbCloseOnActivity);
 			this.Controls.Add(this.cancelButton);
 			this.Controls.Add(this.okButton);
 			this.Controls.Add(this.label2);
-			this.Controls.Add(this.llProjectLocationUrl);
-			this.Controls.Add(this.label1);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.MinimumSize = new System.Drawing.Size(288, 355);
@@ -256,9 +232,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.LinkLabel llProjectLocationUrl;
         private System.Windows.Forms.Button okButton;
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.CheckBox cbCloseOnActivity;
