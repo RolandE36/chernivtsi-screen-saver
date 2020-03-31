@@ -32,8 +32,9 @@ namespace Web_Page_Screensaver
             {
                 multiScreenGroup.Enabled = true;
                 SetMultiScreenButtonFromMode();
-                ArrangeScreenTabs();
             }
+
+            ArrangeScreenTabs();
         }
 
         private void LoadValuesForTab(int screenNum)

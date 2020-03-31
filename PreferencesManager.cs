@@ -19,11 +19,18 @@
         private const string SCREEN_SPECIFIC_PREF_NAME_FORMATSTRING = "{0}Screen{1}";
 
         private const string MULTISCREEN_PREF_DEFAULT = "Separate";
-        private const string URL_PREF_PRIMARYSCREEN_DEFAULT = "http://langate.tv/d4fee077-1a44-47fb-a367-d15cad794a2a/embed.html?dvr=false"; // Separated by space   ChernivtsiScreenSaver
-        private const string URL_PREF_NONPRIMARYSCREEN_DEFAULT = "http://langate.tv/camera360/embed.html?dvr=false";
-        private const string INTERVAL_PREF_DEFAULT = "30";
+        private const string URL_PREF_PRIMARYSCREEN_DEFAULT = "";
+        private const string URL_PREF_NONPRIMARYSCREEN_DEFAULT = "";
+        private const string INTERVAL_PREF_DEFAULT = "300"; // 5 min
         private const string RANDOMIZE_PREF_DEFAULT = "False";
         private const string CLOSE_ON_ACTIVITY_PREF_DEFAULT = "True";
+
+        private List<string> DEFAULT_VALUES = new List<string>() {
+            "http://langate.tv:80/d4fee077-1a44-47fb-a367-d15cad794a2a/embed.html?dvr=false",
+            "http://langate.tv/31105ca2-3c06-4196-8766-f8464a40a1a6/embed.html?dvr=false",
+            "http://langate.tv/filarmonia/embed.html?dvr=false",
+            "http://langate.tv/camera360/embed.html?dvr=false"
+        };
 
         private static RegistryKey reg = Registry.CurrentUser.CreateSubKey(Program.KEY);
 
@@ -276,6 +283,16 @@
                         ? new List<string>()
                         : nextScreenUrlsPrefResult.Split(' ').ToList());
                 nextScreenUrlsPrefResult = LoadPrefByScreen<string>(++i, URL_PREF, TempDefaultValue, TempDefaultValue);
+            }
+
+            // Load Default values of there are no predefined settings
+            foreach (var urlsScreen in allUrls)
+            {
+                if (urlsScreen.Count == 0 || (urlsScreen.Count == 1 && urlsScreen.Contains(URL_PREF_PRIMARYSCREEN_DEFAULT)))
+                {
+                    urlsScreen.Clear();
+                    urlsScreen.AddRange(DEFAULT_VALUES);
+                }
             }
 
             return allUrls;
