@@ -286,10 +286,12 @@
             }
 
             // Load Default values of there are no predefined settings
+            var rnd = new Random();
             foreach (var urlsScreen in allUrls)
             {
                 if (urlsScreen.Count == 0 || (urlsScreen.Count == 1 && urlsScreen.Contains(URL_PREF_PRIMARYSCREEN_DEFAULT)))
                 {
+                    if (allUrls.IndexOf(urlsScreen) > 0) DEFAULT_VALUES.Sort((a, b) => 1 - 2 * rnd.Next(0, 1)); // Randomize records on the second screen
                     urlsScreen.Clear();
                     urlsScreen.AddRange(DEFAULT_VALUES);
                 }
