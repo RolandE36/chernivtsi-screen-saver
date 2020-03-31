@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Web_Page_Screensaver</RootNamespace>
-    <AssemblyName>Chernivtsi-webcam-screen-saver</AssemblyName>
+    <AssemblyName>chernivtsi-webcam-screen-saver</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
