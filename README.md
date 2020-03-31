@@ -1,6 +1,10 @@
 # Chernivtsi Webcams Screensaver
 
-[Download](https://github.com/RolandE36/chernivtsi-screen-saver/releases/download/1.0.0.0/chernivtsi-webcam-screen-saver.scr)
+<a href="https://github.com/RolandE36/chernivtsi-screen-saver/releases/download/1.0.0.0/chernivtsi-webcam-screen-saver.scr" target="_blank">
+  <img src="https://raw.githubusercontent.com/RolandE36/chernivtsi-screen-saver/master/readme/preview.png" />
+</a>
+
+[Download ScreenSaver](https://github.com/RolandE36/chernivtsi-screen-saver/releases/download/1.0.0.0/chernivtsi-webcam-screen-saver.scr)
 
 ## Dependencies
 
